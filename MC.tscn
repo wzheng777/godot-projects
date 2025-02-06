@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmm7ad3rynw86"]
+
+[ext_resource type="Script" path="res://MC.gd" id="1_yjji6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ay0bw"]
+size = Vector2(21, 28)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_yjji6")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 2)
+shape = SubResource("RectangleShape2D_ay0bw")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+position_smoothing_speed = 15.0
