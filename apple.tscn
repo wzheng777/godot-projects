@@ -173,7 +173,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_364k8")
 }],
-"loop": true,
+"loop": false,
 "name": &"colect",
 "speed": 6.0
 }]
@@ -187,7 +187,8 @@ script = ExtResource("1_pymqb")
 sprite_frames = SubResource("SpriteFrames_cdx6g")
 animation = &"colect"
 autoplay = "apple"
-frame_progress = 0.835395
+frame = 5
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_hgdlp")
