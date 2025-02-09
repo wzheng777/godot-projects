@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://q516d7knf16u"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_nlejv"]
+[ext_resource type="Texture2D" uid="uid://5vrux8he577x" path="res://Gray.png" id="1_yxd5w"]
+[ext_resource type="Texture2D" uid="uid://bxdt5pauvtho" path="res://Cool Text - Jump Land 475686377598701.png" id="2_q2a8p"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_nlejv")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_yxd5w")
+stretch_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -425.5
+offset_top = -230.0
+offset_right = 425.5
+offset_bottom = -36.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_q2a8p")
+
+[node name="start" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -102.0
+offset_top = 4.0
+offset_right = 102.0
+offset_bottom = 94.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Start game"
+
+[connection signal="pressed" from="start" to="." method="_on_lvl_1_pressed"]

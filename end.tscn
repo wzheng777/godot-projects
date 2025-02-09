@@ -1,40 +1,7 @@
-[gd_scene load_steps=14 format=3 uid="uid://bceergypycdma"]
+[gd_scene load_steps=5 format=3 uid="uid://bceergypycdma"]
 
 [ext_resource type="Script" path="res://end.gd" id="1_mcc41"]
 [ext_resource type="Texture2D" uid="uid://bj2fj44uwqe6h" path="res://End (Idle).png" id="1_okv8l"]
-[ext_resource type="Texture2D" uid="uid://34bc6m6hyu67" path="res://End (Pressed) (64x64).png" id="3_678gi"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_byl7m"]
-atlas = ExtResource("3_678gi")
-region = Rect2(0, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jmtos"]
-atlas = ExtResource("3_678gi")
-region = Rect2(64, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_r1i8e"]
-atlas = ExtResource("3_678gi")
-region = Rect2(128, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_kn7pu"]
-atlas = ExtResource("3_678gi")
-region = Rect2(192, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_31ta1"]
-atlas = ExtResource("3_678gi")
-region = Rect2(256, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_a3188"]
-atlas = ExtResource("3_678gi")
-region = Rect2(320, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pcw4c"]
-atlas = ExtResource("3_678gi")
-region = Rect2(384, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4emlb"]
-atlas = ExtResource("3_678gi")
-region = Rect2(448, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ylbhp"]
 animations = [{
@@ -45,35 +12,6 @@ animations = [{
 "loop": true,
 "name": &"ender",
 "speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_byl7m")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jmtos")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_r1i8e")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_kn7pu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_31ta1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_a3188")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pcw4c")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4emlb")
-}],
-"loop": true,
-"name": &"ending",
-"speed": 16.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bk2lh"]
@@ -87,7 +25,6 @@ texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_ylbhp")
 animation = &"ender"
 autoplay = "ender"
-frame_progress = 0.0584572
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 10)
