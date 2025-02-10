@@ -1,13 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://bceergypycdma"]
 
-[ext_resource type="Script" path="res://end.gd" id="1_mcc41"]
-[ext_resource type="Texture2D" uid="uid://bj2fj44uwqe6h" path="res://End (Idle).png" id="1_okv8l"]
+[ext_resource type="Script" path="res://end.gd" id="1_wurif"]
+[ext_resource type="Texture2D" uid="uid://bj2fj44uwqe6h" path="res://End (Idle).png" id="2_0yl5d"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ylbhp"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_okv8l")
+"texture": ExtResource("2_0yl5d")
 }],
 "loop": true,
 "name": &"ender",
@@ -18,7 +18,7 @@ animations = [{
 size = Vector2(46, 44)
 
 [node name="end" type="Area2D"]
-script = ExtResource("1_mcc41")
+script = ExtResource("1_wurif")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
