@@ -1,6 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://b5px2ymwd7y7c"]
+[gd_scene load_steps=22 format=3 uid="uid://b5px2ymwd7y7c"]
 
+[ext_resource type="Script" path="res://scenes/game_objects/slime.gd" id="1_3nfke"]
 [ext_resource type="Texture2D" uid="uid://dbupd4p1k6866" path="res://Idle-Run (44x30).png" id="1_av8qo"]
+[ext_resource type="Texture2D" uid="uid://cgy1tmbsog1o3" path="res://Hit (44x30).png" id="3_jvayl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ob1r2"]
 atlas = ExtResource("1_av8qo")
@@ -42,6 +44,26 @@ region = Rect2(352, 0, 44, 30)
 atlas = ExtResource("1_av8qo")
 region = Rect2(396, 0, 44, 30)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_wd23h"]
+atlas = ExtResource("3_jvayl")
+region = Rect2(176, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dv8ev"]
+atlas = ExtResource("3_jvayl")
+region = Rect2(132, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_unpvi"]
+atlas = ExtResource("3_jvayl")
+region = Rect2(88, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oo8ge"]
+atlas = ExtResource("3_jvayl")
+region = Rect2(44, 0, 44, 30)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d64fj"]
+atlas = ExtResource("3_jvayl")
+region = Rect2(0, 0, 44, 30)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_45va1"]
 animations = [{
 "frames": [{
@@ -78,19 +100,53 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wd23h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dv8ev")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_unpvi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oo8ge")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d64fj")
+}],
+"loop": false,
+"name": &"die slime",
+"speed": 7.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kysbr"]
 size = Vector2(40, 25)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_77mgx"]
+size = Vector2(42, 26)
+
 [node name="slime" type="RigidBody2D"]
+script = ExtResource("1_3nfke")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_45va1")
+animation = &"die slime"
 autoplay = "default"
-frame_progress = 0.810765
+frame = 2
+frame_progress = 0.697787
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2.5)
 shape = SubResource("RectangleShape2D_kysbr")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_77mgx")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

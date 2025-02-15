@@ -313,16 +313,16 @@ position = Vector2(521, 545)
 position = Vector2(401, 369)
 
 [node name="slime6" parent="sceneObjects/enymi" instance=ExtResource("7_m5wth")]
-position = Vector2(532, 34)
+position = Vector2(921, 353)
 
 [node name="slime7" parent="sceneObjects/enymi" instance=ExtResource("7_m5wth")]
-position = Vector2(1265, 33)
+position = Vector2(1371, 49)
 
 [node name="slime8" parent="sceneObjects/enymi" instance=ExtResource("7_m5wth")]
 position = Vector2(1386, 481)
 
 [node name="slime9" parent="sceneObjects/enymi" instance=ExtResource("7_m5wth")]
-position = Vector2(1671, 210)
+position = Vector2(1686, 321)
 
 [node name="UI" type="CanvasLayer" parent="."]
 
