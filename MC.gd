@@ -6,7 +6,7 @@ const JUMP_VELOCITY = -450.0
 @onready var mc = $Sprite2D
 
 func jump():
-	velocity.y = - 450.0
+	velocity.y = - 800.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")

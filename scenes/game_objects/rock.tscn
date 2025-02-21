@@ -1,6 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://gryyviury0g1"]
+[gd_scene load_steps=21 format=3 uid="uid://gryyviury0g1"]
 
 [ext_resource type="Texture2D" uid="uid://cpfvw51vae7k2" path="res://Rock1_Idle (38x34).png" id="1_bfpr8"]
+[ext_resource type="Script" path="res://scenes/game_objects/rock.gd" id="1_p70xd"]
+[ext_resource type="Texture2D" uid="uid://dn3ppmsdfydm0" path="res://scenes/game_objects/Rock1_Hit.png" id="3_d870s"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cqotv"]
 atlas = ExtResource("1_bfpr8")
@@ -58,6 +60,10 @@ region = Rect2(456, 0, 38, 34)
 atlas = ExtResource("1_bfpr8")
 region = Rect2(494, 0, 38, 34)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_5w4if"]
+atlas = ExtResource("3_d870s")
+region = Rect2(0, 0, 38, 34)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_4o74k"]
 animations = [{
 "frames": [{
@@ -106,18 +112,27 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5w4if")
+}],
+"loop": true,
+"name": &"die rock",
+"speed": 1.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6ggin"]
 size = Vector2(36, 31)
 
 [node name="rock" type="RigidBody2D"]
+script = ExtResource("1_p70xd")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_4o74k")
 autoplay = "default"
-frame_progress = 0.606823
+frame_progress = 0.318644
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 1.5)
