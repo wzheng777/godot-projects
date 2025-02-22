@@ -231,163 +231,6 @@ sources/0 = SubResource("TileSetAtlasSource_56lj8")
 
 [node name="sceneObjects" type="Node" parent="."]
 
-[node name="colectables" type="Node" parent="sceneObjects"]
-
-[node name="Area2D" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(265, 534)
-
-[node name="Area2D2" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(47, 475)
-
-[node name="Area2D3" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(494, 511)
-
-[node name="Area2D4" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(160, 347)
-
-[node name="Area2D5" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(491, 323)
-
-[node name="Area2D6" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(72, 127)
-
-[node name="Area2D7" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(286, 88)
-
-[node name="Area2D8" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(643, 107)
-
-[node name="Area2D9" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(848, 44)
-
-[node name="Area2D10" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(811, 143)
-
-[node name="Area2D11" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(820, 274)
-
-[node name="Area2D12" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(734, 408)
-
-[node name="Area2D13" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(729, 536)
-
-[node name="Area2D14" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(897, 361)
-
-[node name="Area2D15" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(938, 457)
-
-[node name="Area2D16" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(1163, 565)
-
-[node name="Area2D17" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(1136, 389)
-
-[node name="Area2D18" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(1182, 476)
-
-[node name="Area2D19" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(1113, 196)
-
-[node name="Area2D20" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(1146, 40)
-
-[node name="Area2D21" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(1293, 123)
-
-[node name="Area2D22" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(1360, 411)
-
-[node name="Area2D23" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(1337, 269)
-
-[node name="Area2D24" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(1524, 97)
-
-[node name="Area2D25" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(1766, 220)
-
-[node name="Area2D26" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(1766, 391)
-
-[node name="Area2D27" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(1576, 531)
-
-[node name="Area2D28" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(57, 372)
-
-[node name="Area2D29" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(302, 193)
-
-[node name="Area2D30" parent="sceneObjects/colectables" instance=ExtResource("1_681db")]
-position = Vector2(580, 227)
-
-[node name="enymi" type="Node" parent="sceneObjects"]
-
-[node name="mush" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(192, 352)
-
-[node name="RigidBody2D" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(302, 544)
-
-[node name="RigidBody2D2" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(153, 528)
-
-[node name="RigidBody2D3" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(203, 416)
-
-[node name="RigidBody2D4" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(391, 625)
-
-[node name="RigidBody2D5" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(408, 352)
-
-[node name="RigidBody2D6" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(498, 191)
-
-[node name="RigidBody2D7" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(733, 303)
-
-[node name="RigidBody2D8" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(84, 223)
-
-[node name="RigidBody2D9" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(767, 63)
-
-[node name="RigidBody2D10" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(1020, 191)
-
-[node name="RigidBody2D11" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(1218, 383)
-
-[node name="RigidBody2D12" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(676, 625)
-
-[node name="RigidBody2D13" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(1064, 575)
-
-[node name="RigidBody2D14" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(1438, 128)
-
-[node name="RigidBody2D15" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(1677, 334)
-
-[node name="RigidBody2D16" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(1886, 623)
-
-[node name="RigidBody2D17" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(1374, 621)
-
-[node name="RigidBody2D18" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(358, 77)
-
-[node name="RigidBody2D19" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(330, 271)
-
-[node name="RigidBody2D20" parent="sceneObjects/enymi" instance=ExtResource("2_27p0r")]
-position = Vector2(601, 112)
-
 [node name="TextureRect" type="TextureRect" parent="sceneObjects"]
 texture_filter = 1
 offset_right = 1921.0
@@ -415,6 +258,163 @@ script = ExtResource("8_7k2at")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="sceneObjects/Area2D"]
 shape = SubResource("WorldBoundaryShape2D_ottij")
+
+[node name="colectables" type="Node" parent="."]
+
+[node name="Area2D" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(265, 534)
+
+[node name="Area2D2" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(47, 475)
+
+[node name="Area2D3" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(494, 511)
+
+[node name="Area2D4" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(160, 347)
+
+[node name="Area2D5" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(491, 323)
+
+[node name="Area2D6" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(72, 127)
+
+[node name="Area2D7" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(286, 88)
+
+[node name="Area2D8" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(643, 107)
+
+[node name="Area2D9" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(848, 44)
+
+[node name="Area2D10" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(811, 143)
+
+[node name="Area2D11" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(820, 274)
+
+[node name="Area2D12" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(734, 408)
+
+[node name="Area2D13" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(729, 536)
+
+[node name="Area2D14" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(897, 361)
+
+[node name="Area2D15" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(938, 457)
+
+[node name="Area2D16" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(1163, 565)
+
+[node name="Area2D17" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(1136, 389)
+
+[node name="Area2D18" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(1182, 476)
+
+[node name="Area2D19" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(1113, 196)
+
+[node name="Area2D20" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(1146, 40)
+
+[node name="Area2D21" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(1293, 123)
+
+[node name="Area2D22" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(1360, 411)
+
+[node name="Area2D23" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(1337, 269)
+
+[node name="Area2D24" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(1524, 97)
+
+[node name="Area2D25" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(1766, 220)
+
+[node name="Area2D26" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(1766, 391)
+
+[node name="Area2D27" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(1576, 531)
+
+[node name="Area2D28" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(57, 372)
+
+[node name="Area2D29" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(302, 193)
+
+[node name="Area2D30" parent="colectables" instance=ExtResource("1_681db")]
+position = Vector2(580, 227)
+
+[node name="enymi" type="Node" parent="."]
+
+[node name="mush" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(192, 352)
+
+[node name="RigidBody2D" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(302, 544)
+
+[node name="RigidBody2D2" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(153, 528)
+
+[node name="RigidBody2D3" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(203, 416)
+
+[node name="RigidBody2D4" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(391, 625)
+
+[node name="RigidBody2D5" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(408, 352)
+
+[node name="RigidBody2D6" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(498, 191)
+
+[node name="RigidBody2D7" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(733, 303)
+
+[node name="RigidBody2D8" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(84, 223)
+
+[node name="RigidBody2D9" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(767, 63)
+
+[node name="RigidBody2D10" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(1020, 191)
+
+[node name="RigidBody2D11" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(1218, 383)
+
+[node name="RigidBody2D12" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(676, 625)
+
+[node name="RigidBody2D13" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(1064, 575)
+
+[node name="RigidBody2D14" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(1438, 128)
+
+[node name="RigidBody2D15" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(1677, 334)
+
+[node name="RigidBody2D16" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(1886, 623)
+
+[node name="RigidBody2D17" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(1374, 621)
+
+[node name="RigidBody2D18" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(358, 77)
+
+[node name="RigidBody2D19" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(330, 271)
+
+[node name="RigidBody2D20" parent="enymi" instance=ExtResource("2_27p0r")]
+position = Vector2(601, 112)
 
 [node name="UI" type="CanvasLayer" parent="."]
 

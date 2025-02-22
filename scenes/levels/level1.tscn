@@ -199,6 +199,10 @@ layer_0/tile_data = PackedInt32Array(2621440, 65536, 0, 2621441, 65536, 0, 26214
 [node name="MC" parent="sceneObjects" instance=ExtResource("3_8l727")]
 position = Vector2(149, 611)
 
+[node name="end" parent="sceneObjects" instance=ExtResource("5_s46be")]
+position = Vector2(1058, 39)
+target_level = ExtResource("6_8oiha")
+
 [node name="colectables" type="Node" parent="sceneObjects"]
 
 [node name="Area2D" parent="sceneObjects/colectables" instance=ExtResource("4_6ukdq")]
@@ -291,14 +295,10 @@ position = Vector2(1631, 130)
 [node name="Area2D30" parent="sceneObjects/colectables" instance=ExtResource("4_6ukdq")]
 position = Vector2(1821, 363)
 
-[node name="end" parent="sceneObjects" instance=ExtResource("5_s46be")]
-position = Vector2(1058, 39)
-target_level = ExtResource("6_8oiha")
-
 [node name="enymi" type="Node" parent="sceneObjects"]
 
 [node name="slime" parent="sceneObjects/enymi" instance=ExtResource("7_m5wth")]
-position = Vector2(152, 113)
+position = Vector2(170, 223)
 
 [node name="slime2" parent="sceneObjects/enymi" instance=ExtResource("7_m5wth")]
 position = Vector2(296, 577)
@@ -319,7 +319,7 @@ position = Vector2(921, 353)
 position = Vector2(1371, 49)
 
 [node name="slime8" parent="sceneObjects/enymi" instance=ExtResource("7_m5wth")]
-position = Vector2(1386, 481)
+position = Vector2(1495, 449)
 
 [node name="slime9" parent="sceneObjects/enymi" instance=ExtResource("7_m5wth")]
 position = Vector2(1686, 321)
