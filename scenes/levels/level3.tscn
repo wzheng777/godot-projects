@@ -5,8 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://cgurs8msc24es" path="res://Pink.png" id="3_h70ur"]
 [ext_resource type="Texture2D" uid="uid://dgsjxlo0v5op4" path="res://Terrain (16x16).png" id="4_ti5ku"]
 [ext_resource type="PackedScene" uid="uid://dmm7ad3rynw86" path="res://scenes/game_objects/MC.tscn" id="5_2cpdl"]
+[ext_resource type="PackedScene" uid="uid://mjuyusxslhqe" path="res://scenes/levels/level4.tscn" id="5_rcl61"]
 [ext_resource type="PackedScene" uid="uid://bceergypycdma" path="res://scenes/game_objects/end.tscn" id="6_tu3f6"]
-[ext_resource type="PackedScene" uid="uid://q516d7knf16u" path="res://main_menu.tscn" id="7_450c4"]
 [ext_resource type="Script" path="res://fall_area.gd" id="8_7k2at"]
 [ext_resource type="Texture2D" uid="uid://c01us4lrniddy" path="res://Jump (32x32).png" id="9_ua4dh"]
 [ext_resource type="Script" path="res://game manager.gd" id="10_5fmoc"]
@@ -250,13 +250,13 @@ position = Vector2(183, 602)
 
 [node name="end" parent="sceneObjects" instance=ExtResource("6_tu3f6")]
 position = Vector2(1713, 536)
-target_level = ExtResource("7_450c4")
+target_level = ExtResource("5_rcl61")
 
-[node name="Area2D" type="Area2D" parent="sceneObjects"]
+[node name="fall area" type="Area2D" parent="sceneObjects"]
 position = Vector2(356, 669)
 script = ExtResource("8_7k2at")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="sceneObjects/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sceneObjects/fall area"]
 shape = SubResource("WorldBoundaryShape2D_ottij")
 
 [node name="colectables" type="Node" parent="."]
@@ -483,5 +483,5 @@ expand_mode = 2
 unique_name_in_owner = true
 script = ExtResource("10_5fmoc")
 
-[connection signal="body_entered" from="sceneObjects/Area2D" to="sceneObjects/MC" method="_on_area_2d_body_entered"]
-[connection signal="body_entered" from="sceneObjects/Area2D" to="sceneObjects/Area2D" method="_on_body_entered"]
+[connection signal="body_entered" from="sceneObjects/fall area" to="sceneObjects/MC" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="sceneObjects/fall area" to="sceneObjects/fall area" method="_on_body_entered"]

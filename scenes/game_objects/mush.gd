@@ -16,10 +16,12 @@ func _process(delta: float) -> void:
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if (body.name == "MC"):
 		var y_delta = position.y - body.position.y
-		if (y_delta > 25):
+		print(y_delta)
+		if (y_delta > 19.5):
 			body.jump()
 			mush.animation = "die mush"
 			await mush.animation_finished
 			queue_free()
 		else:
 			print ("lose 1 hp")
+ 

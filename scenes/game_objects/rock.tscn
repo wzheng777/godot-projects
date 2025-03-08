@@ -132,6 +132,9 @@ animations = [{
 "texture": SubResource("AtlasTexture_kbw0a")
 }, {
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_kbw0a")
+}, {
+"duration": 1.0,
 "texture": null
 }],
 "loop": false,
